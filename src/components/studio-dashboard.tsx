@@ -903,6 +903,28 @@ function RealtimeCard({ data }: { data: DashboardData }) {
   );
 }
 
+function LatestContentCard({ data }: { data: DashboardData }) {
+  const latest = data.topContent[0] ?? defaultDashboardData.topContent[0];
+
+  return (
+    <aside className="latest-content-card">
+      <h2>Latest content</h2>
+      <div className="latest-content-preview">
+        <img alt="" src={studioImageSrc(latest.thumbnail)} />
+        <div>
+          <strong>{latest.title}</strong>
+          <span>First 24 hours</span>
+        </div>
+      </div>
+      <div className="latest-content-stat">
+        <span>Views</span>
+        <strong>{latest.views}</strong>
+      </div>
+      <button className="see-more-button small">See more</button>
+    </aside>
+  );
+}
+
 function OverviewHeadline({ views }: { views: string }) {
   return (
     <h2 className="headline" id="analytics-panel-heading">
@@ -978,26 +1000,24 @@ function OverviewContentCard({ data }: { data: DashboardData }) {
   const rows = makeTopContentRows(data);
 
   return (
-    <section className="detail-card overview-content-card">
-      <div className="overview-table-head">
-        <h2>Content</h2>
-        <strong>Average view duration</strong>
-      </div>
-      <div className="detail-table overview-table">
+    <section className="lower-placeholder overview-content-card">
+      <div className="section-rule" />
+      <h2>Your top content in this period</h2>
+      <div className="large-panel overview-table">
         {rows.map((row) => (
-          <div className="detail-row" key={row.label}>
+          <div className="placeholder-row" key={row.label}>
+            <span>{row.label}</span>
             <div className="detail-label">
               <img alt="" src={studioImageSrc(row.thumb)} />
               <span>
-                <strong>{row.label}</strong>
                 <small>{row.note}</small>
               </span>
             </div>
             <strong className="detail-value">{row.value}</strong>
           </div>
         ))}
+        <div className="empty-row short" />
       </div>
-      <button className="see-more-button card-button">See more</button>
     </section>
   );
 }
@@ -1266,9 +1286,7 @@ function TabDetailSections({ data, view }: { data: DashboardData; view: Analytic
   }
 
   return (
-    <section className="detail-grid overview-detail-grid">
-      <OverviewContentCard data={data} />
-    </section>
+    null
   );
 }
 
@@ -1308,8 +1326,14 @@ function AnalyticsPanel({
             selected={view.selectedFilter}
           />
           <PerformanceCard view={view} />
+          {view.kind === "Overview" ? <OverviewContentCard data={data} /> : null}
         </div>
-        {view.kind === "Overview" ? <RealtimeCard data={data} /> : null}
+        {view.kind === "Overview" ? (
+          <div className="right-rail">
+            <RealtimeCard data={data} />
+            <LatestContentCard data={data} />
+          </div>
+        ) : null}
       </section>
       <TabDetailSections data={data} view={view} />
     </>

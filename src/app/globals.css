@@ -1083,6 +1083,20 @@ button {
   padding: 17px 16px 16px;
 }
 
+.right-rail {
+  display: flex;
+  width: var(--realtime-card-width);
+  height: 572px;
+  flex-direction: column;
+  gap: 16px;
+  overflow: visible;
+}
+
+.right-rail .realtime-card {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
 .realtime-card h2 {
   margin: 0;
   font-size: 18px;
@@ -1218,9 +1232,77 @@ button {
   text-align: right;
 }
 
+.latest-content-card {
+  width: 100%;
+  min-height: 214px;
+  border: 1px solid var(--studio-border);
+  border-radius: 13px;
+  background: var(--studio-bg);
+  padding: 17px 16px 16px;
+}
+
+.latest-content-card h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.latest-content-preview {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.latest-content-preview img {
+  width: 56px;
+  height: 31px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.latest-content-preview div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.latest-content-preview strong {
+  overflow: hidden;
+  color: #f1f1f1;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.latest-content-preview span,
+.latest-content-stat span {
+  color: var(--studio-text-muted);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.latest-content-stat {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  border-top: 1px solid #3b3b3b;
+  padding-top: 13px;
+}
+
+.latest-content-stat strong {
+  color: #f1f1f1;
+  font-size: 13px;
+  font-weight: 500;
+}
+
 .lower-placeholder {
-  width: 680px;
-  margin-left: 24px;
+  width: 100%;
+  margin-left: 0;
   padding: 23px 0 80px;
   text-align: center;
 }
@@ -1428,7 +1510,21 @@ button {
 }
 
 .overview-content-card {
-  min-height: 971px;
+  min-height: 0;
+}
+
+.overview-content-card .large-panel {
+  display: grid;
+  gap: 14px;
+  margin-top: 0;
+}
+
+.overview-content-card .placeholder-row {
+  grid-template-columns: minmax(140px, 1fr) minmax(0, 2fr) auto;
+}
+
+.overview-content-card .placeholder-row > span {
+  text-align: left;
 }
 
 .overview-table-head {

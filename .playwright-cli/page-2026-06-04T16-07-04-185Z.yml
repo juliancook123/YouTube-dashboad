@@ -1,0 +1,167 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - button "Collapse menu" [expanded] [ref=e5] [cursor=pointer]
+        - img "YouTube Studio dashboard" [ref=e6]
+      - generic [ref=e7]:
+        - button "Search" [ref=e8] [cursor=pointer]
+        - button "Help" [ref=e9] [cursor=pointer]
+        - button "Ask Studio" [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+        - button "Notifications" [ref=e14] [cursor=pointer]
+        - button "Create" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: Create
+        - button "mkbhd You're a manager" [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]:
+            - strong [ref=e20]: mkbhd
+            - generic [ref=e21]: You're a manager
+    - complementary [ref=e22]:
+      - generic [ref=e23]:
+        - img "mkbhd" [ref=e24]
+        - generic [ref=e25]: Channel
+        - generic [ref=e26]: mkbhd
+      - navigation "Studio sections" [ref=e27]:
+        - button "Dashboard" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: Dashboard
+        - button "Content" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: Content
+        - button "Analytics" [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]: Analytics
+        - button "Community" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: Community
+        - button "Languages" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: Languages
+        - button "Content detection" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: Content detection
+        - button "Earn" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: Earn
+        - button "Customization" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]: Customization
+        - button "Audio library" [ref=e44] [cursor=pointer]:
+          - generic [ref=e45]: Audio library
+      - generic [ref=e46]:
+        - button "Settings" [ref=e47] [cursor=pointer]:
+          - generic [ref=e48]: Settings
+        - button "Send feedback" [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]: Send feedback
+    - main [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - heading "Channel analytics" [level=1] [ref=e54]
+          - button "Advanced mode" [ref=e55] [cursor=pointer]
+        - generic [ref=e56]:
+          - button "How did viewers find my content?" [ref=e57] [cursor=pointer]: How did viewers find my content?
+          - button "How many new viewers did I reach?" [ref=e59] [cursor=pointer]: How many new viewers did I reach?
+          - button "Summarize my latest video performance" [ref=e61] [cursor=pointer]: Summarize my latest video performance
+          - button "Open overflow menu to dismiss suggestions" [ref=e63] [cursor=pointer]:
+            - img [ref=e64]
+        - generic [ref=e68]:
+          - tablist [ref=e69]:
+            - tab "Overview" [selected] [ref=e70] [cursor=pointer]
+            - tab "Content" [ref=e71] [cursor=pointer]
+            - tab "Audience" [ref=e72] [cursor=pointer]
+            - tab "Revenue" [ref=e73] [cursor=pointer]
+            - tab "Trends" [ref=e74] [cursor=pointer]
+          - button "May 6 – Jun 2, 2026 Last 28 days" [ref=e75] [cursor=pointer]:
+            - generic [ref=e76]: May 6 – Jun 2, 2026
+            - strong [ref=e77]: Last 28 days
+            - img [ref=e78]
+      - tabpanel "Your channel got 1,090,000 views in the last 28 days" [ref=e80]:
+        - generic [ref=e81]:
+          - heading "Your channel got 1,090,000 views in the last 28 days" [level=2] [ref=e82]
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - button "Views 1.1M About the same as usual" [ref=e85] [cursor=pointer]:
+                - generic [ref=e86]: Views
+                - generic [ref=e87]:
+                  - text: 1.1M
+                  - img [ref=e88]
+                - generic [ref=e91]: About the same as usual
+              - button "Watch time (hours) 12.1K 40s average estimated view duration" [ref=e92] [cursor=pointer]:
+                - generic [ref=e93]: Watch time (hours)
+                - generic [ref=e94]: 12.1K
+                - generic [ref=e95]: 40s average estimated view duration
+              - button "Subscribers +7.0K Estimated subscribers gained" [ref=e96] [cursor=pointer]:
+                - generic [ref=e97]: Subscribers
+                - generic [ref=e98]: +7.0K
+                - generic [ref=e99]: Estimated subscribers gained
+              - button "Estimated revenue $3,309.35" [ref=e100] [cursor=pointer]:
+                - generic [ref=e101]: Estimated revenue
+                - generic [ref=e102]: $3,309.35
+            - generic [ref=e103]: Views
+            - img "Views over time" [ref=e105]:
+              - generic [ref=e109]: May 6,...
+              - generic [ref=e110]: May 11, 2026
+              - generic [ref=e111]: May 15, 2026
+              - generic [ref=e112]: May 20, 2026
+              - generic [ref=e113]: May 29, 2...
+              - generic [ref=e114]: Jun ...
+              - generic [ref=e115]: 375.0K
+              - generic [ref=e116]: 250.0K
+              - generic [ref=e117]: 125.0K
+              - generic [ref=e118]: "0"
+              - generic [ref=e119]: (())
+            - button "See more" [ref=e120] [cursor=pointer]
+        - complementary [ref=e121]:
+          - heading "Realtime" [level=2] [ref=e122]
+          - generic [ref=e123]: Updating live
+          - generic [ref=e126]:
+            - strong [ref=e127]: 143,000
+            - generic [ref=e128]: Subscribers
+          - button "See live count" [ref=e129] [cursor=pointer]
+          - generic [ref=e131]:
+            - strong [ref=e132]: 92.2K
+            - generic [ref=e133]: Views · Last 48 hours
+          - generic "Realtime views chart" [ref=e134]
+          - generic [ref=e163]:
+            - generic [ref=e164]: "-48h"
+            - generic [ref=e165]: Now
+          - generic [ref=e166]:
+            - generic [ref=e167]: Top content
+            - generic [ref=e168]: Views
+          - generic [ref=e169]:
+            - generic [ref=e170]:
+              - generic [ref=e171]: mkbhd highlights
+              - strong [ref=e172]: 376.6K
+            - generic [ref=e173]:
+              - generic [ref=e174]: mkbhd newest upload
+              - strong [ref=e175]: 144.5K
+            - generic [ref=e176]:
+              - generic [ref=e177]: mkbhd top short
+              - strong [ref=e178]: 167.2K
+          - button "See more" [ref=e179] [cursor=pointer]
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - heading "Content" [level=2] [ref=e183]
+          - strong [ref=e184]: Average view duration
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e188]:
+              - strong [ref=e189]: STEAL A BRAINROT GIVEAWAY LIVE | STEAL A BRAINROT FREE SECRETS
+              - generic [ref=e190]: Views · Last 28 days
+            - strong [ref=e191]: 0:30
+          - generic [ref=e192]:
+            - generic [ref=e194]:
+              - strong [ref=e195]: FUN CROCODILE CHALLENGE! fake robux
+              - generic [ref=e196]: Views · Last 28 days
+            - strong [ref=e197]: 0:28
+          - generic [ref=e198]:
+            - generic [ref=e200]:
+              - strong [ref=e201]: STEAL A BRAINROT GIVEAWAY LIVE | FREE SECRETS
+              - generic [ref=e202]: Views · Last 28 days
+            - strong [ref=e203]: 0:31
+          - generic [ref=e204]:
+            - generic [ref=e206]:
+              - strong [ref=e207]: FUN CROCODILE CHALLENGE!
+              - generic [ref=e208]: Views · Last 28 days
+            - strong [ref=e209]: 0:26
+          - generic [ref=e210]:
+            - generic [ref=e212]:
+              - strong [ref=e213]: The Wither Rose MLG
+              - generic [ref=e214]: Views · Last 28 days
+            - strong [ref=e215]: 0:23
+        - button "See more" [ref=e216] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e222] [cursor=pointer]:
+    - img [ref=e223]
+  - alert [ref=e226]

@@ -1,0 +1,163 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - button "Collapse menu" [expanded] [ref=e5] [cursor=pointer]
+        - img "YouTube Studio dashboard" [ref=e6]
+      - generic [ref=e7]:
+        - button "Search" [ref=e8]
+        - button "Help" [ref=e9]
+        - button "Ask Studio" [ref=e10]:
+          - img [ref=e11]
+        - button "Notifications" [ref=e14]
+        - button "Create" [ref=e16]:
+          - generic [ref=e17]: Create
+        - button "Nickynoodlepaws You're a manager" [ref=e18]:
+          - generic [ref=e19]:
+            - strong [ref=e20]: Nickynoodlepaws
+            - generic [ref=e21]: You're a manager
+    - complementary [ref=e22]:
+      - generic [ref=e23]:
+        - img "Nickynoodlepaws" [ref=e24]
+        - generic [ref=e25]: Channel
+        - generic [ref=e26]: Nickynoodlepaws
+      - navigation "Studio sections" [ref=e27]:
+        - button "Dashboard" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: Dashboard
+        - button "Content" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: Content
+        - button "Analytics" [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]: Analytics
+        - button "Community" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: Community
+        - button "Languages" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: Languages
+        - button "Content detection" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: Content detection
+        - button "Earn" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: Earn
+        - button "Customization" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]: Customization
+        - button "Audio library" [ref=e44] [cursor=pointer]:
+          - generic [ref=e45]: Audio library
+      - generic [ref=e46]:
+        - button "Settings" [ref=e47] [cursor=pointer]:
+          - generic [ref=e48]: Settings
+        - button "Send feedback" [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]: Send feedback
+    - main [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - heading "Channel analytics" [level=1] [ref=e54]
+          - button "Advanced mode" [ref=e988]
+        - generic [ref=e56]:
+          - button "How did viewers find my content?" [ref=e57]: How did viewers find my content?
+          - button "How many new viewers did I reach?" [ref=e59]: How many new viewers did I reach?
+          - button "Summarize my latest video performance" [ref=e61]: Summarize my latest video performance
+          - button "Open overflow menu to dismiss suggestions" [ref=e63]:
+            - img [ref=e64]
+        - generic [ref=e68]:
+          - tablist [ref=e69]:
+            - tab "Overview" [ref=e70] [cursor=pointer]
+            - tab "Content" [ref=e71] [cursor=pointer]
+            - tab "Audience" [ref=e72] [cursor=pointer]
+            - tab "Revenue" [active] [selected] [ref=e73] [cursor=pointer]
+            - tab "Trends" [ref=e74] [cursor=pointer]
+          - button "May 6 – Jun 2, 2026 Last 28 days" [ref=e989]:
+            - generic [ref=e990]: May 6 – Jun 2, 2026
+            - strong [ref=e991]: Last 28 days
+            - img [ref=e992]
+      - tabpanel [ref=e1138]:
+        - generic [ref=e995]:
+          - radiogroup "Revenue content type" [ref=e1514]:
+            - radio "All" [checked] [ref=e1515]
+            - radio "Shorts Feed ads" [ref=e1516]
+            - radio "Supers & gifts" [ref=e1517]
+          - generic [ref=e999]:
+            - button "Estimated revenue $627.70" [ref=e1518]:
+              - generic [ref=e1519]: Estimated revenue
+              - generic [ref=e1520]: $627.70
+            - img "Views over time" [ref=e1027]:
+              - generic [ref=e1030]: May 6,...
+              - generic [ref=e1031]: May 11, 2026
+              - generic [ref=e1032]: May 15, 2026
+              - generic [ref=e1033]: May 20, 2026
+              - generic [ref=e1034]: May 29, 2...
+              - generic [ref=e1035]: Jun ...
+              - generic [ref=e1036]: $20.00
+              - generic [ref=e1037]: $10.00
+              - generic [ref=e1038]: $0.00
+              - generic [ref=e1039]: "-$10.00"
+              - generic [ref=e1040]: (())
+            - button "See more" [ref=e1041]
+      - generic [ref=e1101]:
+        - generic [ref=e1521]:
+          - generic [ref=e1522]:
+            - generic [ref=e1524]:
+              - heading "How much you’re earning" [level=2] [ref=e1525]
+              - paragraph [ref=e1526]: Estimated · Last 6 months
+            - generic [ref=e1527]:
+              - generic [ref=e1528]:
+                - strong [ref=e1532]: June (ongoing)
+                - strong [ref=e1533]: $0.03
+              - generic [ref=e1534]:
+                - strong [ref=e1538]: May
+                - strong [ref=e1539]: $627.76
+              - generic [ref=e1540]:
+                - strong [ref=e1544]: April
+                - strong [ref=e1545]: $1,469.90
+              - generic [ref=e1546]:
+                - strong [ref=e1550]: March
+                - strong [ref=e1551]: $3,039.33
+              - generic [ref=e1552]:
+                - strong [ref=e1556]: February
+                - strong [ref=e1557]: $2,716.76
+              - generic [ref=e1558]:
+                - strong [ref=e1562]: January
+                - strong [ref=e1563]: $0.00
+            - button "See more" [ref=e1564]
+          - generic [ref=e1565]:
+            - generic [ref=e1567]:
+              - heading "How you make money" [level=2] [ref=e1568]
+              - paragraph [ref=e1569]: Estimated · Last 28 days
+            - radiogroup "Filter" [ref=e1570]:
+              - radio "All" [checked] [ref=e1571]
+              - radio "Videos" [ref=e1572]
+              - radio "Shorts" [ref=e1573]
+              - radio "Live" [ref=e1574]
+            - generic [ref=e1575]:
+              - generic [ref=e1576]:
+                - strong [ref=e1580]: Supers & gifts
+                - strong [ref=e1581]: $618.59
+              - generic [ref=e1582]:
+                - strong [ref=e1586]: Watch Page ads
+                - strong [ref=e1587]: $8.38
+              - generic [ref=e1588]:
+                - strong [ref=e1592]: Shorts Feed ads
+                - strong [ref=e1593]: $0.74
+            - button "See more" [ref=e1594]
+        - generic [ref=e1596]:
+          - generic [ref=e1598]:
+            - heading "Content performance" [level=2] [ref=e1599]
+            - paragraph [ref=e1600]: Last 28 days
+          - radiogroup "Filter" [ref=e1601]:
+            - radio "Videos" [checked] [ref=e1602]
+            - radio "Shorts" [ref=e1603]
+            - radio "Live" [ref=e1604]
+          - generic [ref=e1605]:
+            - generic [ref=e1606]:
+              - strong [ref=e1609]: The Wither Rose MLG
+              - strong [ref=e1610]: $0.31
+            - generic [ref=e1611]:
+              - strong [ref=e1614]: How I Took Over an Admin Abusing Lifesteal SMP Copy...
+              - strong [ref=e1615]: $0.13
+            - generic [ref=e1616]:
+              - strong [ref=e1619]: Epic Minecraft Music Sync
+              - strong [ref=e1620]: $0.13
+            - generic [ref=e1621]:
+              - strong [ref=e1624]: Revenge, Betrayal!! (Nightmare SMP)
+              - strong [ref=e1625]: $0.03
+          - button "See more" [ref=e1626]
+  - button "Open Next.js Dev Tools" [ref=e229] [cursor=pointer]:
+    - img [ref=e230]
+  - alert [ref=e344]

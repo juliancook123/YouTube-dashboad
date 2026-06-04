@@ -1,0 +1,94 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - button "Collapse menu" [expanded] [ref=e5] [cursor=pointer]
+        - img "YouTube Studio dashboard" [ref=e6]
+      - generic [ref=e7]:
+        - button "Search" [ref=e8]
+        - button "Help" [ref=e9]
+        - button "Ask Studio" [ref=e10]:
+          - img [ref=e11]
+        - button "Notifications" [ref=e14]
+        - button "Create" [ref=e16]:
+          - generic [ref=e17]: Create
+        - button "Nickynoodlepaws You're a manager" [ref=e18]:
+          - generic [ref=e19]:
+            - strong [ref=e20]: Nickynoodlepaws
+            - generic [ref=e21]: You're a manager
+    - complementary [ref=e22]:
+      - generic [ref=e23]:
+        - img "Nickynoodlepaws" [ref=e24]
+        - generic [ref=e25]: Channel
+        - generic [ref=e26]: Nickynoodlepaws
+      - navigation "Studio sections" [ref=e27]:
+        - button "Dashboard" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: Dashboard
+        - button "Content" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: Content
+        - button "Analytics" [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]: Analytics
+        - button "Community" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: Community
+        - button "Languages" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: Languages
+        - button "Content detection" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: Content detection
+        - button "Earn" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: Earn
+        - button "Customization" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]: Customization
+        - button "Audio library" [ref=e44] [cursor=pointer]:
+          - generic [ref=e45]: Audio library
+      - generic [ref=e46]:
+        - button "Settings" [ref=e47] [cursor=pointer]:
+          - generic [ref=e48]: Settings
+        - button "Send feedback" [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]: Send feedback
+    - main [ref=e51]:
+      - generic [ref=e52]:
+        - heading "Channel analytics" [level=1] [ref=e54]
+        - generic [ref=e56]:
+          - button "How did viewers find my content?" [ref=e57]: How did viewers find my content?
+          - button "How many new viewers did I reach?" [ref=e59]: How many new viewers did I reach?
+          - button "Summarize my latest video performance" [ref=e61]: Summarize my latest video performance
+          - button "Open overflow menu to dismiss suggestions" [ref=e63]:
+            - img [ref=e64]
+        - tablist [ref=e69]:
+          - tab "Overview" [ref=e70] [cursor=pointer]
+          - tab "Content" [ref=e71] [cursor=pointer]
+          - tab "Audience" [ref=e72] [cursor=pointer]
+          - tab "Revenue" [ref=e73] [cursor=pointer]
+          - tab "Trends" [active] [selected] [ref=e74] [cursor=pointer]
+      - generic [ref=e954]:
+        - generic [ref=e955]:
+          - img [ref=e956]
+          - generic [ref=e958]: AI tools for brainstorming video ideas about trends have moved to Inspiration.
+          - button "Learn more" [ref=e959]
+          - button "Go to Inspiration" [ref=e960]
+        - generic [ref=e961]:
+          - heading "Get ideas for your next video" [level=2] [ref=e962]
+          - button "Saved (0)" [ref=e963]:
+            - img [ref=e964]
+            - text: Saved (0)
+        - searchbox [ref=e967]
+        - generic [ref=e968]:
+          - generic [ref=e969]:
+            - heading "What people are looking for" [level=3] [ref=e970]
+            - button "Show all" [ref=e971]
+          - generic [ref=e972]:
+            - article [ref=e973]:
+              - paragraph [ref=e974]: block clutch montage
+              - button "Save block clutch montage" [ref=e975]:
+                - img [ref=e976]
+            - article [ref=e978]:
+              - paragraph [ref=e979]: minecraft clutch edit
+              - button "Save minecraft clutch edit" [ref=e980]:
+                - img [ref=e981]
+            - article [ref=e983]:
+              - paragraph [ref=e984]: how to clutch in minecraft
+              - button "Save how to clutch in minecraft" [ref=e985]:
+                - img [ref=e986]
+  - button "Open Next.js Dev Tools" [ref=e229] [cursor=pointer]:
+    - img [ref=e230]
+  - alert [ref=e344]

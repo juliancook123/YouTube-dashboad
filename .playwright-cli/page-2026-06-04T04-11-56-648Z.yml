@@ -1,0 +1,173 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - button "Collapse menu" [expanded] [ref=e5] [cursor=pointer]
+        - img "YouTube Studio dashboard" [ref=e6]
+      - generic [ref=e7]:
+        - button "Search" [ref=e8]
+        - button "Help" [ref=e9]
+        - button "Ask Studio" [ref=e10]:
+          - img [ref=e11]
+        - button "Notifications" [ref=e14]
+        - button "Create" [ref=e16]:
+          - generic [ref=e17]: Create
+        - button "Nickynoodlepaws You're a manager" [ref=e18]:
+          - generic [ref=e19]:
+            - strong [ref=e20]: Nickynoodlepaws
+            - generic [ref=e21]: You're a manager
+    - complementary [ref=e22]:
+      - generic [ref=e23]:
+        - img "Nickynoodlepaws" [ref=e24]
+        - generic [ref=e25]: Channel
+        - generic [ref=e26]: Nickynoodlepaws
+      - navigation "Studio sections" [ref=e27]:
+        - button "Dashboard" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: Dashboard
+        - button "Content" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: Content
+        - button "Analytics" [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]: Analytics
+        - button "Community" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: Community
+        - button "Languages" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: Languages
+        - button "Content detection" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: Content detection
+        - button "Earn" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: Earn
+        - button "Customization" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]: Customization
+        - button "Audio library" [ref=e44] [cursor=pointer]:
+          - generic [ref=e45]: Audio library
+      - generic [ref=e46]:
+        - button "Settings" [ref=e47] [cursor=pointer]:
+          - generic [ref=e48]: Settings
+        - button "Send feedback" [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]: Send feedback
+    - main [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - heading "Channel analytics" [level=1] [ref=e54]
+          - button "Advanced mode" [ref=e1133]
+        - generic [ref=e56]:
+          - button "How did viewers find my content?" [ref=e57]: How did viewers find my content?
+          - button "How many new viewers did I reach?" [ref=e59]: How many new viewers did I reach?
+          - button "Summarize my latest video performance" [ref=e61]: Summarize my latest video performance
+          - button "Open overflow menu to dismiss suggestions" [ref=e63]:
+            - img [ref=e64]
+        - generic [ref=e68]:
+          - tablist [ref=e69]:
+            - tab "Overview" [ref=e70] [cursor=pointer]
+            - tab "Content" [active] [selected] [ref=e71] [cursor=pointer]
+            - tab "Audience" [ref=e72] [cursor=pointer]
+            - tab "Revenue" [ref=e73] [cursor=pointer]
+            - tab "Trends" [ref=e74] [cursor=pointer]
+          - button "May 6 – Jun 2, 2026 Last 28 days" [ref=e1134]:
+            - generic [ref=e1135]: May 6 – Jun 2, 2026
+            - strong [ref=e1136]: Last 28 days
+            - img [ref=e1137]
+      - tabpanel [ref=e1139]:
+        - generic [ref=e1140]:
+          - radiogroup "Content content type" [ref=e1141]:
+            - radio "All" [ref=e1142]
+            - radio "Videos" [ref=e1143]
+            - radio "Shorts" [ref=e1144]
+            - radio "Live" [checked] [ref=e1145]
+            - radio "Posts" [ref=e1146]
+            - radio "Playlists" [ref=e1147]
+          - generic [ref=e1148]:
+            - generic [ref=e1149]:
+              - button "Views 481.6K 83% less than previous 28 days" [ref=e1150]:
+                - generic [ref=e1151]: Views
+                - generic [ref=e1152]:
+                  - text: 481.6K
+                  - img [ref=e1153]
+                - generic [ref=e1156]: 83% less than previous 28 days
+              - button "Impressions 27.3K 89% less than previous 28 days" [ref=e1157]:
+                - generic [ref=e1158]: Impressions
+                - generic [ref=e1159]:
+                  - text: 27.3K
+                  - img [ref=e1160]
+                - generic [ref=e1163]: 89% less than previous 28 days
+              - button "Impressions click-through rate 5.8% Views per impressions shown" [ref=e1164]:
+                - generic [ref=e1165]: Impressions click-through rate
+                - generic [ref=e1166]: 5.8%
+                - generic [ref=e1167]: Views per impressions shown
+              - button "Average view duration 0:29" [ref=e1168]:
+                - generic [ref=e1169]: Average view duration
+                - generic [ref=e1170]: 0:29
+            - generic [ref=e1171]: Views
+            - img "Views over time" [ref=e1173]:
+              - generic [ref=e1176]: May 6,...
+              - generic [ref=e1177]: May 11, 2026
+              - generic [ref=e1178]: May 15, 2026
+              - generic [ref=e1179]: May 20, 2026
+              - generic [ref=e1180]: May 29, 2...
+              - generic [ref=e1181]: Jun ...
+              - generic [ref=e1182]: 375.0K
+              - generic [ref=e1183]: 250.0K
+              - generic [ref=e1184]: 125.0K
+              - generic [ref=e1185]: "0"
+              - generic [ref=e1186]: (())
+            - button "See more" [ref=e1187]
+      - generic [ref=e1188]:
+        - generic [ref=e1190]:
+          - generic [ref=e1192]:
+            - heading "How viewers find your live streams" [level=2] [ref=e1193]
+            - paragraph [ref=e1194]: Views · Last 28 days
+          - radiogroup "Filter" [ref=e1195]:
+            - radio "Overall" [checked] [ref=e1196]
+            - radio "External" [ref=e1197]
+            - radio "YouTube search" [ref=e1198]
+            - radio "Suggested videos" [ref=e1199]
+            - radio "Playlists" [ref=e1200]
+          - generic [ref=e1201]:
+            - generic [ref=e1202]:
+              - strong [ref=e1206]: Shorts feed
+              - strong [ref=e1207]: 90.3%
+            - generic [ref=e1208]:
+              - strong [ref=e1212]: Vertical live feed
+              - strong [ref=e1213]: 8.2%
+            - generic [ref=e1214]:
+              - strong [ref=e1218]: Direct or unknown
+              - strong [ref=e1219]: 0.8%
+            - generic [ref=e1220]:
+              - strong [ref=e1224]: Channel pages
+              - strong [ref=e1225]: 0.3%
+            - generic [ref=e1226]:
+              - strong [ref=e1230]: Other YouTube features
+              - strong [ref=e1231]: 0.3%
+            - generic [ref=e1232]:
+              - strong [ref=e1236]: Others
+              - strong [ref=e1237]: 0.2%
+          - button "See more" [ref=e1238]
+        - generic [ref=e1240]:
+          - generic [ref=e1242]:
+            - heading "Top live streams" [level=2] [ref=e1243]
+            - paragraph [ref=e1244]: Views · Last 28 days
+          - generic [ref=e1245]:
+            - generic [ref=e1246]:
+              - generic [ref=e1248]:
+                - strong [ref=e1249]: STEAL A BRAINROT GIVEAWAY LIVE | STEAL A BRAINROT FREE SECRETS + FREE BRAINROT GODS GIVEAWAY! (ROBLO
+                - generic [ref=e1250]: 0:30 · (1.1%)
+              - strong [ref=e1251]: 175,895
+            - generic [ref=e1252]:
+              - generic [ref=e1254]:
+                - strong [ref=e1255]: FUN CROCODILE CHALLENGE! fake robux
+                - generic [ref=e1256]: 0:28 · (176.2%)
+              - strong [ref=e1257]: 112,114
+            - generic [ref=e1258]:
+              - generic [ref=e1260]:
+                - strong [ref=e1261]: STEAL A BRAINROT GIVEAWAY LIVE | STEAL A BRAINROT FREE SECRETS + FREE BRAINROT GODS GIVEAWAY! (ROBLO
+                - generic [ref=e1262]: May 15, 2026 · 0:31
+              - strong [ref=e1263]: 69,066
+            - generic [ref=e1264]:
+              - generic [ref=e1266]:
+                - strong [ref=e1267]: FUN CROCODILE CHALLENGE!
+                - generic [ref=e1268]: 0:26 · (224.4%)
+              - strong [ref=e1269]: 63,629
+          - button "See more" [ref=e1270]
+  - button "Open Next.js Dev Tools" [ref=e229] [cursor=pointer]:
+    - img [ref=e230]
+  - alert [ref=e233]

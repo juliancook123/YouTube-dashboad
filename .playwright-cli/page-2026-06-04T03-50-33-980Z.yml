@@ -1,0 +1,159 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - button "Expand menu" [active] [ref=e1172] [cursor=pointer]
+        - img "YouTube Studio dashboard" [ref=e6]
+      - generic [ref=e7]:
+        - button "Search" [ref=e8]
+        - button "Help" [ref=e9]
+        - button "Ask Studio" [ref=e10]:
+          - img [ref=e11]
+        - button "Notifications" [ref=e14]
+        - button "Create" [ref=e16]:
+          - generic [ref=e17]: Create
+        - button "Nickynoodlepaws You're a manager" [ref=e18]:
+          - generic [ref=e19]:
+            - strong [ref=e20]: Nickynoodlepaws
+            - generic [ref=e21]: You're a manager
+    - complementary [ref=e22]:
+      - img "Nickynoodlepaws" [ref=e24]
+      - navigation "Studio sections" [ref=e27]:
+        - button [ref=e1173] [cursor=pointer]
+        - button [ref=e1174] [cursor=pointer]
+        - button [ref=e1175] [cursor=pointer]
+        - button [ref=e1176] [cursor=pointer]
+        - button [ref=e1177] [cursor=pointer]
+        - button [ref=e1178] [cursor=pointer]
+        - button [ref=e1179] [cursor=pointer]
+        - button [ref=e1180] [cursor=pointer]
+        - button [ref=e1181] [cursor=pointer]
+      - generic [ref=e46]:
+        - button [ref=e1182] [cursor=pointer]
+        - button [ref=e1183] [cursor=pointer]
+    - main [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - heading "Channel analytics" [level=1] [ref=e54]
+          - button "Advanced mode" [ref=e1022]
+        - generic [ref=e56]:
+          - button "How did viewers find my content?" [ref=e57]: How did viewers find my content?
+          - button "How many new viewers did I reach?" [ref=e59]: How many new viewers did I reach?
+          - button "Summarize my latest video performance" [ref=e61]: Summarize my latest video performance
+          - button "Open overflow menu to dismiss suggestions" [ref=e63]:
+            - img [ref=e64]
+        - generic [ref=e68]:
+          - tablist [ref=e69]:
+            - tab "Overview" [selected] [ref=e70] [cursor=pointer]
+            - tab "Content" [ref=e71] [cursor=pointer]
+            - tab "Audience" [ref=e72] [cursor=pointer]
+            - tab "Revenue" [ref=e73] [cursor=pointer]
+            - tab "Trends" [ref=e74] [cursor=pointer]
+          - button "May 6 – Jun 2, 2026 Last 28 days" [ref=e1023]:
+            - generic [ref=e1024]: May 6 – Jun 2, 2026
+            - strong [ref=e1025]: Last 28 days
+            - img [ref=e1026]
+      - tabpanel "Your channel got 486,969 views in the last 28 days" [ref=e1028]:
+        - generic [ref=e1029]:
+          - heading "Your channel got 486,969 views in the last 28 days" [level=2] [ref=e1030]:
+            - generic [ref=e1031]: Your channel got 486,969 views
+            - generic [ref=e1032]: in the last 28 days
+          - generic [ref=e1033]:
+            - generic [ref=e1034]:
+              - button "Views 487.0K About the same as usual" [ref=e1035]:
+                - generic [ref=e1036]: Views
+                - generic [ref=e1037]:
+                  - text: 487.0K
+                  - img [ref=e1038]
+                - generic [ref=e1041]: About the same as usual
+              - button "Watch time (hours) 4.0K About the same as usual" [ref=e1042]:
+                - generic [ref=e1043]: Watch time (hours)
+                - generic [ref=e1044]:
+                  - text: 4.0K
+                  - img [ref=e1045]
+                - generic [ref=e1048]: About the same as usual
+              - button "Subscribers +2.3K 87% less than previous 28 days" [ref=e1049]:
+                - generic [ref=e1050]: Subscribers
+                - generic [ref=e1051]:
+                  - text: +2.3K
+                  - img [ref=e1052]
+                - generic [ref=e1055]: 87% less than previous 28 days
+              - button "Estimated revenue $627.70" [ref=e1056]:
+                - generic [ref=e1057]: Estimated revenue
+                - generic [ref=e1058]: $627.70
+            - generic [ref=e1059]: Views
+            - img "Views over time" [ref=e1061]:
+              - generic [ref=e1064]: May 6,...
+              - generic [ref=e1065]: May 11, 2026
+              - generic [ref=e1066]: May 15, 2026
+              - generic [ref=e1067]: May 20, 2026
+              - generic [ref=e1068]: May 29, 2...
+              - generic [ref=e1069]: Jun ...
+              - generic [ref=e1070]: 375.0K
+              - generic [ref=e1071]: 250.0K
+              - generic [ref=e1072]: 125.0K
+              - generic [ref=e1073]: "0"
+              - generic [ref=e1074]: (())
+            - button "See more" [ref=e1075]
+        - complementary [ref=e1076]:
+          - heading "Realtime" [level=2] [ref=e1077]
+          - generic [ref=e1078]: Updating live
+          - generic [ref=e1081]:
+            - strong [ref=e1082]: 179,883
+            - generic [ref=e1083]: Subscribers
+          - button "See live count" [ref=e1084]
+          - generic [ref=e1086]:
+            - strong [ref=e1087]: "119"
+            - generic [ref=e1088]: Views · Last 48 hours
+          - generic "Realtime views chart" [ref=e1089]
+          - generic [ref=e1118]:
+            - generic [ref=e1119]: "-48h"
+            - generic [ref=e1120]: Now
+          - generic [ref=e1121]:
+            - generic [ref=e1122]: Top content
+            - generic [ref=e1123]: Views
+          - generic [ref=e1124]:
+            - generic [ref=e1125]:
+              - generic [ref=e1126]: 200IQ Save in my 1...
+              - strong [ref=e1127]: "20"
+            - generic [ref=e1128]:
+              - generic [ref=e1129]: What If A Teacher O...
+              - strong [ref=e1130]: "18"
+            - generic [ref=e1131]:
+              - generic [ref=e1132]: Noob Gets Trolled b...
+              - strong [ref=e1133]: "14"
+          - button "See more" [ref=e1134]
+      - generic [ref=e1136]:
+        - generic [ref=e1137]:
+          - heading "Content" [level=2] [ref=e1138]
+          - strong [ref=e1139]: Average view duration
+        - generic [ref=e1140]:
+          - generic [ref=e1141]:
+            - generic [ref=e1143]:
+              - strong [ref=e1144]: STEAL A BRAINROT GIVEAWAY LIVE | STEAL A BRAINROT FREE SECRETS
+              - generic [ref=e1145]: Views · Last 28 days
+            - strong [ref=e1146]: 0:30
+          - generic [ref=e1147]:
+            - generic [ref=e1149]:
+              - strong [ref=e1150]: FUN CROCODILE CHALLENGE! fake robux
+              - generic [ref=e1151]: Views · Last 28 days
+            - strong [ref=e1152]: 0:28
+          - generic [ref=e1153]:
+            - generic [ref=e1155]:
+              - strong [ref=e1156]: STEAL A BRAINROT GIVEAWAY LIVE | FREE SECRETS
+              - generic [ref=e1157]: Views · Last 28 days
+            - strong [ref=e1158]: 0:31
+          - generic [ref=e1159]:
+            - generic [ref=e1161]:
+              - strong [ref=e1162]: FUN CROCODILE CHALLENGE!
+              - generic [ref=e1163]: Views · Last 28 days
+            - strong [ref=e1164]: 0:26
+          - generic [ref=e1165]:
+            - generic [ref=e1167]:
+              - strong [ref=e1168]: The Wither Rose MLG
+              - generic [ref=e1169]: Views · Last 28 days
+            - strong [ref=e1170]: 0:23
+        - button "See more" [ref=e1171]
+  - button "Open Next.js Dev Tools" [ref=e229] [cursor=pointer]:
+    - img [ref=e230]
+  - alert [ref=e233]

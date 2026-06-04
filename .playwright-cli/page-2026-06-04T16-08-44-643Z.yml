@@ -1,0 +1,163 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - paragraph [ref=e6]: Hidden tool
+          - heading "Account analysis" [level=1] [ref=e7]
+        - generic [ref=e8]:
+          - button "Save" [ref=e9] [cursor=pointer]
+          - button "Reset" [ref=e10] [cursor=pointer]
+          - link "Dashboard" [ref=e11] [cursor=pointer]:
+            - /url: /
+      - generic [ref=e13]:
+        - generic [ref=e14]: YouTube channel URL
+        - generic [ref=e15]:
+          - textbox "YouTube channel URL" [ref=e16]:
+            - /placeholder: https://www.youtube.com/@channel
+            - text: https://www.youtube.com/@mkbhd
+          - button "Estimate" [ref=e17] [cursor=pointer]
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - heading "Channel" [level=2] [ref=e20]
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - text: Name
+              - textbox "Name" [ref=e23]: mkbhd
+            - generic [ref=e24]:
+              - text: Handle
+              - textbox "Handle" [ref=e25]: mkbhd
+            - generic [ref=e26]:
+              - text: Avatar URL
+              - textbox "Avatar URL" [ref=e27]: /mock-assets/channel-avatar.jpg
+            - generic [ref=e28]:
+              - text: Source URL
+              - textbox "Source URL" [ref=e29]: https://www.youtube.com/@mkbhd
+        - generic [ref=e30]:
+          - heading "Overview" [level=2] [ref=e31]
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - text: Headline views
+              - textbox "Headline views" [ref=e34]: 1,090,000
+            - generic [ref=e35]:
+              - text: Subscribers gained
+              - textbox "Subscribers gained" [ref=e36]: +7.0K
+            - generic [ref=e37]:
+              - text: Realtime views
+              - textbox "Realtime views" [ref=e38]: 92.2K
+            - generic [ref=e39]:
+              - text: Realtime subscribers
+              - textbox "Realtime subscribers" [ref=e40]: 143,000
+            - generic [ref=e41]:
+              - text: Date range
+              - textbox "Date range" [ref=e42]: May 6 – Jun 2, 2026
+            - generic [ref=e43]:
+              - text: Period label
+              - textbox "Period label" [ref=e44]: Last 28 days
+      - generic [ref=e45]:
+        - heading "Metric cards" [level=2] [ref=e46]
+        - generic [ref=e47]:
+          - group "Views" [ref=e48]:
+            - generic [ref=e49]: Views
+            - generic [ref=e50]:
+              - text: Value
+              - textbox "Value" [ref=e51]: 1.1M
+            - generic [ref=e52]:
+              - text: Detail
+              - textbox "Detail" [ref=e53]: About the same as usual
+            - generic [ref=e54]:
+              - text: Trend
+              - combobox "Trend" [ref=e55]:
+                - option "same" [selected]
+                - option "down"
+                - option "up"
+                - option "neutral"
+          - group "Watch time (hours)" [ref=e56]:
+            - generic [ref=e57]: Watch time (hours)
+            - generic [ref=e58]:
+              - text: Value
+              - textbox "Value" [ref=e59]: 12.1K
+            - generic [ref=e60]:
+              - text: Detail
+              - textbox "Detail" [ref=e61]: 40s average estimated view duration
+            - generic [ref=e62]:
+              - text: Trend
+              - combobox "Trend" [ref=e63]:
+                - option "same"
+                - option "down"
+                - option "up"
+                - option "neutral" [selected]
+          - group "Subscribers" [ref=e64]:
+            - generic [ref=e65]: Subscribers
+            - generic [ref=e66]:
+              - text: Value
+              - textbox "Value" [ref=e67]: +7.0K
+            - generic [ref=e68]:
+              - text: Detail
+              - textbox "Detail" [ref=e69]: Estimated subscribers gained
+            - generic [ref=e70]:
+              - text: Trend
+              - combobox "Trend" [ref=e71]:
+                - option "same"
+                - option "down"
+                - option "up"
+                - option "neutral" [selected]
+          - group "Estimated revenue" [ref=e72]:
+            - generic [ref=e73]: Estimated revenue
+            - generic [ref=e74]:
+              - text: Value
+              - textbox "Value" [ref=e75]: $3,309.35
+            - generic [ref=e76]:
+              - text: Detail
+              - textbox "Detail" [ref=e77]
+            - generic [ref=e78]:
+              - text: Trend
+              - combobox "Trend" [ref=e79]:
+                - option "same"
+                - option "down"
+                - option "up"
+                - option "neutral" [selected]
+      - generic [ref=e80]:
+        - heading "Chart" [level=2] [ref=e81]
+        - generic [ref=e82]:
+          - text: Daily values
+          - textbox "Daily values" [ref=e83]: 43037, 35085, 37428, 36320, 35373, 45909, 33211, 28587, 53209, 197677, 59685, 29593, 47409, 37382, 27861, 41508, 37791, 34991, 34207, 32578, 46117, 36356, 32493, 43011, 33885, 37530, 39368, 34309, 29787
+      - generic [ref=e84]:
+        - heading "Top content" [level=2] [ref=e85]
+        - generic [ref=e86]:
+          - group "Item 1" [ref=e87]:
+            - generic [ref=e88]: Item 1
+            - generic [ref=e89]:
+              - text: Title
+              - textbox "Title" [ref=e90]: mkbhd highlights
+            - generic [ref=e91]:
+              - text: Views
+              - textbox "Views" [ref=e92]: 376.6K
+            - generic [ref=e93]:
+              - text: Thumbnail
+              - textbox "Thumbnail" [ref=e94]: /mock-assets/top-1.jpg
+          - group "Item 2" [ref=e95]:
+            - generic [ref=e96]: Item 2
+            - generic [ref=e97]:
+              - text: Title
+              - textbox "Title" [ref=e98]: mkbhd newest upload
+            - generic [ref=e99]:
+              - text: Views
+              - textbox "Views" [ref=e100]: 144.5K
+            - generic [ref=e101]:
+              - text: Thumbnail
+              - textbox "Thumbnail" [ref=e102]: /mock-assets/top-2.jpg
+          - group "Item 3" [ref=e103]:
+            - generic [ref=e104]: Item 3
+            - generic [ref=e105]:
+              - text: Title
+              - textbox "Title" [ref=e106]: mkbhd top short
+            - generic [ref=e107]:
+              - text: Views
+              - textbox "Views" [ref=e108]: 167.2K
+            - generic [ref=e109]:
+              - text: Thumbnail
+              - textbox "Thumbnail" [ref=e110]: /mock-assets/top-3.jpg
+  - button "Open Next.js Dev Tools" [ref=e116] [cursor=pointer]:
+    - img [ref=e117]
+  - alert [ref=e120]

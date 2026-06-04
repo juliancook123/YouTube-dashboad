@@ -184,14 +184,19 @@ button {
 
 .spark-button {
   display: inline-flex;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   border: 0;
   border-radius: 50%;
   background: transparent;
   color: #fff;
+}
+
+.spark-button .studio-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .bell-button {
@@ -567,6 +572,11 @@ button {
   background: #383838;
 }
 
+.suggestion-menu .studio-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .tabs-row {
   display: flex;
   height: 64px;
@@ -595,12 +605,10 @@ button {
   color: #aaa;
   filter: none;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   min-width: 0;
   padding: 0 0 2px;
-  transition:
-    color 120ms ease,
-    font-weight 120ms ease;
+  transition: color 120ms ease;
 }
 
 .tab:focus {
@@ -609,16 +617,16 @@ button {
 
 .tab::before {
   position: absolute;
-  inset: 8px -12px 7px;
+  inset: 7px -10px 6px;
   z-index: -1;
-  border-radius: 4px;
-  background: var(--studio-hover);
+  border-radius: 999px;
+  background: radial-gradient(circle, rgb(255 255 255 / 6%) 0 60%, transparent 61%);
   content: "";
   opacity: 0;
-  transform: scaleX(0.82);
+  transform: scale(0.45);
   transform-origin: center;
   transition:
-    opacity 140ms ease,
+    opacity 140ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -646,13 +654,18 @@ button {
 
 .tab:hover::before {
   opacity: 1;
-  transform: scaleX(1);
+  transform: scale(1);
 }
 
 .tab:hover::after {
-  height: 2px;
-  opacity: 0.65;
-  transform: scaleX(0.74);
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.tab:active::before {
+  opacity: 1;
+  transform: scale(1.08);
+  transition-duration: 80ms;
 }
 
 .tab:first-child {
@@ -673,7 +686,7 @@ button {
 
 .tab.selected {
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .tab.selected::after {
@@ -753,13 +766,18 @@ button {
   margin-top: -4px;
 }
 
-.date-button svg {
+.date-caret {
   position: relative;
   grid-column: 2;
   grid-row: 1 / span 2;
   justify-self: end;
-  margin-right: 5px;
-  top: -3px;
+  width: 0;
+  height: 0;
+  margin-top: 1px;
+  margin-right: 11px;
+  border-top: 5px solid #f1f1f1;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
 }
 
 .analytics-top {

@@ -2,12 +2,9 @@
 
 import {
   CheckCircle2,
-  ChevronDown,
   CircleArrowDown,
   Heart,
   Info,
-  MoreVertical,
-  Sparkles,
 } from "lucide-react";
 import { type KeyboardEvent, type PointerEvent, useEffect, useMemo, useState } from "react";
 import {
@@ -433,7 +430,7 @@ function TopBar({
           <IconImg src={iconUrls.help} />
         </button>
         <button aria-label="Ask Studio" className="spark-button" type="button">
-          <Sparkles size={26} strokeWidth={0} fill="currentColor" />
+          <IconImg src={iconUrls.spark} />
         </button>
         <button aria-label="Notifications" className="icon-button bell-button" type="button">
           <IconImg src={iconUrls.bell} />
@@ -561,7 +558,7 @@ function HeaderArea({
         <PromptChip>How many new viewers did I reach?</PromptChip>
         <PromptChip>Summarize my latest video performance</PromptChip>
         <button aria-label="Open overflow menu to dismiss suggestions" className="suggestion-menu">
-          <MoreVertical size={22} />
+          <IconImg src={iconUrls.overflow} />
         </button>
       </div>
       <div className="tabs-row">
@@ -586,7 +583,7 @@ function HeaderArea({
           <button className="date-button" type="button">
             <span>{data.dateRange}</span>
             <strong>{data.periodLabel}</strong>
-            <ChevronDown size={22} />
+            <span aria-hidden className="date-caret" />
           </button>
         )}
       </div>

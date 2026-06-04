@@ -11,6 +11,10 @@
   --studio-elevated: #303030;
   --studio-border: #4a4a4a;
   --studio-border-soft: #3d3d3d;
+  --studio-chip: #404040;
+  --studio-chip-hover: #4a4a4a;
+  --studio-hover: rgb(255 255 255 / 8%);
+  --studio-ink: #707070;
   --studio-text: #ffffff;
   --studio-text-muted: #aaa;
   --studio-text-faint: #8f8f8f;
@@ -104,7 +108,9 @@ button {
   transition:
     background-color 120ms ease,
     border-color 120ms ease,
+    opacity 120ms ease,
     box-shadow 120ms ease,
+    transform 180ms cubic-bezier(0.4, 0, 0.2, 1),
     color 120ms ease;
 }
 
@@ -227,7 +233,7 @@ button {
 
 .advanced-button:hover,
 .advanced-button:active {
-  background: #3b3b3b;
+  background: var(--studio-chip-hover);
 }
 
 .create-button:active,
@@ -488,7 +494,7 @@ button {
 .live-count-button {
   border: 0;
   border-radius: 999px;
-  background: #3b3b3b;
+  background: var(--studio-chip);
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -516,7 +522,7 @@ button {
   gap: 9px;
   border: 0;
   border-radius: 18px;
-  background: #3e3e3e;
+  background: var(--studio-chip);
   color: #fff;
   padding: 0 18px 0 12px;
   font-size: 14px;
@@ -525,11 +531,11 @@ button {
 }
 
 .prompt-chip:hover {
-  background: #3e3e3e;
+  background: var(--studio-chip-hover);
 }
 
 .prompt-chip:active {
-  background: #3e3e3e;
+  background: #525252;
 }
 
 .prompt-spark {
@@ -578,23 +584,42 @@ button {
 .tab {
   position: relative;
   z-index: 1;
+  overflow: visible;
   display: inline-flex;
   height: 48px;
   align-items: center;
   justify-content: center;
   border: 0;
   background: transparent;
-  color: #949494;
+  border-radius: 2px;
+  color: #aaa;
   filter: none;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   min-width: 0;
   padding: 0 0 2px;
-  transition: color 120ms ease;
+  transition:
+    color 120ms ease,
+    font-weight 120ms ease;
 }
 
 .tab:focus {
   outline: none;
+}
+
+.tab::before {
+  position: absolute;
+  inset: 8px -12px 7px;
+  z-index: -1;
+  border-radius: 4px;
+  background: var(--studio-hover);
+  content: "";
+  opacity: 0;
+  transform: scaleX(0.82);
+  transform-origin: center;
+  transition:
+    opacity 140ms ease,
+    transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tab::after {
@@ -602,17 +627,32 @@ button {
   bottom: -1px;
   left: 0;
   width: calc(100% + 3px);
-  height: 2px;
-  background: #777;
+  height: 3px;
+  background: var(--studio-ink);
   content: "";
   opacity: 0;
-  transform: scaleX(0.45);
+  transform: scaleX(0);
   transform-origin: center;
   transition:
     background-color 120ms ease,
     height 120ms ease,
     opacity 120ms ease,
-    transform 160ms ease;
+    transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tab:hover {
+  color: #f1f1f1;
+}
+
+.tab:hover::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.tab:hover::after {
+  height: 2px;
+  opacity: 0.65;
+  transform: scaleX(0.74);
 }
 
 .tab:first-child {
@@ -633,14 +673,24 @@ button {
 
 .tab.selected {
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .tab.selected::after {
   height: 4px;
-  background: #8c8c8c;
+  background: var(--studio-ink);
   opacity: 1;
   transform: scaleX(1);
+}
+
+.tab.selected:hover::after {
+  height: 4px;
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.tab.selected::before {
+  opacity: 0;
 }
 
 .tab:nth-child(2).selected::after {
@@ -782,7 +832,7 @@ button {
   display: grid;
   height: 108px;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  border-bottom: 1px solid #242424;
+  border-bottom: 1px solid var(--studio-surface);
 }
 
 .metric-card {
@@ -791,7 +841,7 @@ button {
   align-items: center;
   border: 0;
   border-right: 1px solid #333;
-  background: #242424;
+  background: var(--studio-surface);
   padding-top: 19px;
   text-align: center;
 }
@@ -801,15 +851,15 @@ button {
 }
 
 .metric-card:active {
-  background: #242424;
+  background: #292929;
 }
 
 .metric-card:first-child {
-  background: #292929;
+  background: var(--studio-bg);
 }
 
 .metric-card:first-child:hover {
-  background: #292929;
+  background: #303030;
 }
 
 .metric-card:last-child {
@@ -905,7 +955,7 @@ button {
 }
 
 .chart-grid {
-  stroke: #3b3b3b;
+  stroke: #2c2c2c;
   stroke-width: 1;
 }
 
@@ -1038,6 +1088,7 @@ button {
   .metric-card,
   .date-button,
   .tab,
+  .tab::before,
   .tab::after,
   .mini-chart span,
   .top-content-item,
@@ -1389,7 +1440,7 @@ button {
   align-items: center;
   border: 0;
   border-radius: 8px;
-  background: #3e3e3e;
+  background: var(--studio-chip);
   color: #f1f1f1;
   padding: 0 14px;
   font-size: 14px;
@@ -1398,11 +1449,11 @@ button {
 }
 
 .filter-pill:not(.selected):hover {
-  background: #515151;
+  background: var(--studio-chip-hover);
 }
 
 .filter-pill:not(.selected):active {
-  background: #5a5a5a;
+  background: #525252;
 }
 
 .filter-pill:nth-child(6) {

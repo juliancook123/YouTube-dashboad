@@ -6,7 +6,15 @@ import {
   Heart,
   Info,
 } from "lucide-react";
-import { type KeyboardEvent, type PointerEvent, useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import {
+  type KeyboardEvent,
+  type MouseEvent,
+  type PointerEvent,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import {
   DashboardData,
   ESTIMATOR_VERSION,
@@ -408,6 +416,13 @@ function TopBar({
   isNavExpanded: boolean;
   onToggleNav: () => void;
 }) {
+  const router = useRouter();
+
+  function openEditor(event: MouseEvent<HTMLImageElement>) {
+    event.preventDefault();
+    router.push("/account-analysis");
+  }
+
   return (
     <header className="topbar">
       <div className="topbar-left">
@@ -420,7 +435,12 @@ function TopBar({
         >
           <IconImg src={iconUrls.menu} />
         </button>
-        <img alt="YouTube Studio dashboard" className="studio-logo" src={studioLogoUrl} />
+        <img
+          alt="YouTube Studio dashboard"
+          className="studio-logo"
+          onContextMenu={openEditor}
+          src={studioLogoUrl}
+        />
       </div>
       <div className="topbar-actions">
         <button aria-label="Search" className="icon-button" type="button">

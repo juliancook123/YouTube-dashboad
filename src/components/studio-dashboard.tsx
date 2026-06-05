@@ -2,6 +2,7 @@
 
 import {
   CheckCircle2,
+  ChevronDown,
   CircleArrowDown,
   Heart,
   Info,
@@ -603,7 +604,7 @@ function HeaderArea({
           <button className="date-button" type="button">
             <span>{data.dateRange}</span>
             <strong>{data.periodLabel}</strong>
-            <span aria-hidden className="date-caret" />
+            <ChevronDown aria-hidden className="date-caret" size={24} strokeWidth={2.1} />
           </button>
         )}
       </div>

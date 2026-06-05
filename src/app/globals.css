@@ -57,8 +57,8 @@ button {
     var(--dashboard-canvas-width) - (var(--main-inline-gutter) * 2)
   );
   --main-inline-gutter: 24px;
-  --overview-column-gap: 24px;
-  --realtime-card-width: 314px;
+  --overview-column-gap: 38px;
+  --realtime-card-width: 288px;
   min-height: 100vh;
   background: var(--studio-bg);
   color: var(--studio-text);
@@ -455,9 +455,9 @@ button {
 }
 
 .studio-app.nav-expanded .analytics-top {
-  grid-template-columns: minmax(638px, 638fr) minmax(var(--realtime-card-width), 314fr);
+  grid-template-columns: minmax(0, 1fr) var(--realtime-card-width);
   column-gap: var(--overview-column-gap);
-  padding-right: var(--main-inline-gutter);
+  padding-right: 16px;
 }
 
 .studio-app.nav-expanded .analytics-content,
@@ -612,7 +612,7 @@ button {
   color: #aaa;
   filter: none;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   min-width: 0;
   padding: 0 0 2px;
   transition: color 120ms ease;
@@ -693,7 +693,7 @@ button {
 
 .tab.selected {
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .tab.selected::after {
@@ -734,7 +734,7 @@ button {
 
 .date-button {
   display: grid;
-  grid-template-columns: 1fr 28px;
+  grid-template-columns: 1fr 24px;
   align-items: center;
   width: 229px;
   height: 58px;
@@ -774,29 +774,29 @@ button {
 }
 
 .date-caret {
-  position: relative;
   grid-column: 2;
   grid-row: 1 / span 2;
   justify-self: end;
-  width: 0;
-  height: 0;
-  margin-top: 1px;
-  margin-right: 11px;
-  border-top: 5px solid #f1f1f1;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
+  align-self: center;
+  width: 24px;
+  height: 24px;
+  margin-top: -1px;
+  margin-right: -1px;
+  color: #f1f1f1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .analytics-top {
   display: grid;
   width: 100%;
   max-width: var(--dashboard-canvas-width);
-  grid-template-columns: minmax(638px, 638fr) minmax(var(--realtime-card-width), 314fr);
+  grid-template-columns: minmax(0, 1fr) var(--realtime-card-width);
   column-gap: var(--overview-column-gap);
   align-items: start;
   justify-content: space-between;
   margin-inline: auto;
-  padding: 16px var(--main-inline-gutter) 0 var(--main-inline-gutter);
+  padding: 16px 16px 0 var(--main-inline-gutter);
 }
 
 .analytics-content,
@@ -1239,14 +1239,28 @@ button {
 }
 
 .mini-chart {
+  position: relative;
   display: flex;
   height: 42px;
   align-items: flex-end;
-  gap: 4px;
+  justify-content: space-between;
+  gap: 0;
   margin-top: 17px;
 }
 
+.mini-chart::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: #4a4a4a;
+  content: "";
+}
+
 .mini-chart span {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 4px;
   min-height: 1px;

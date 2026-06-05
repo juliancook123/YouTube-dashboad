@@ -52,7 +52,7 @@ button {
 
 .studio-app {
   --dashboard-side-width: 72px;
-  --dashboard-canvas-width: 1024px;
+  --dashboard-canvas-width: 100%;
   --dashboard-canvas-inner-width: calc(
     var(--dashboard-canvas-width) - (var(--main-inline-gutter) * 2)
   );
@@ -455,7 +455,7 @@ button {
 }
 
 .studio-app.nav-expanded .analytics-top {
-  grid-template-columns: minmax(610px, 1fr) var(--realtime-card-width);
+  grid-template-columns: minmax(638px, 638fr) minmax(var(--realtime-card-width), 314fr);
   column-gap: var(--overview-column-gap);
   padding-right: var(--main-inline-gutter);
 }
@@ -474,12 +474,13 @@ button {
 }
 
 .studio-app.nav-expanded .realtime-card {
-  width: var(--realtime-card-width);
+  width: 100%;
 }
 
 .header-area {
   width: 100%;
   max-width: var(--dashboard-canvas-width);
+  margin-inline: auto;
   padding: 24px 24px 0 32px;
   border-bottom: 1px solid #2c2c2c;
 }
@@ -790,10 +791,11 @@ button {
   display: grid;
   width: 100%;
   max-width: var(--dashboard-canvas-width);
-  grid-template-columns: minmax(610px, 1fr) var(--realtime-card-width);
+  grid-template-columns: minmax(638px, 638fr) minmax(var(--realtime-card-width), 314fr);
   column-gap: var(--overview-column-gap);
   align-items: start;
   justify-content: space-between;
+  margin-inline: auto;
   padding: 16px var(--main-inline-gutter) 0 var(--main-inline-gutter);
 }
 
@@ -990,6 +992,12 @@ button {
   stroke-width: 1;
 }
 
+.chart-area-fill {
+  fill: var(--studio-blue);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 .chart-line {
   stroke: var(--studio-blue);
   stroke-linecap: round;
@@ -997,34 +1005,28 @@ button {
   stroke-width: 2;
 }
 
-.chart-line-shadow {
-  opacity: 0.45;
-  stroke: #85d8ff;
-  stroke-width: 4;
+.chart-content .chart-area-fill {
+  fill: #7b6de8;
 }
 
 .chart-content .chart-line {
   stroke: #7b6de8;
 }
 
-.chart-content .chart-line-shadow {
-  stroke: #a9a0ff;
+.chart-audience .chart-area-fill {
+  fill: #9b5de5;
 }
 
 .chart-audience .chart-line {
   stroke: #9b5de5;
 }
 
-.chart-audience .chart-line-shadow {
-  stroke: #c28cff;
+.chart-revenue .chart-area-fill {
+  fill: #56a6a4;
 }
 
 .chart-revenue .chart-line {
   stroke: #56a6a4;
-}
-
-.chart-revenue .chart-line-shadow {
-  stroke: #8bd3d0;
 }
 
 .chart-hover-line {
@@ -1133,10 +1135,17 @@ button {
   text-anchor: start;
 }
 
-.publish-marker {
-  fill: #c7c7c7;
-  font-family: "Roboto", "Noto", Arial, sans-serif;
-  font-size: 13px;
+.chart-publish-marker {
+  position: absolute;
+  top: 153px;
+  left: calc(57.717% - 14.16px);
+  z-index: 2;
+  display: block;
+  width: 17px;
+  height: 17px;
+  color: #a7a7a7;
+  fill: currentColor;
+  pointer-events: none;
 }
 
 .see-more-button {
@@ -1161,7 +1170,8 @@ button {
 
 .right-rail {
   display: flex;
-  width: var(--realtime-card-width);
+  width: 100%;
+  min-width: 0;
   height: 572px;
   flex-direction: column;
   gap: 16px;
@@ -1509,7 +1519,7 @@ button {
   max-width: var(--dashboard-canvas-inner-width);
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
-  margin: 24px 24px 80px;
+  margin: 24px auto 80px;
 }
 
 .detail-columns {
@@ -1518,7 +1528,7 @@ button {
   max-width: var(--dashboard-canvas-inner-width);
   grid-template-columns: repeat(2, minmax(0, 476px));
   gap: 24px;
-  margin: 24px 24px 80px;
+  margin: 24px auto 80px;
 }
 
 .detail-column {
@@ -1917,6 +1927,7 @@ button {
 .trends-panel {
   width: 100%;
   max-width: var(--dashboard-canvas-width);
+  margin-inline: auto;
   padding: 0 32px 96px;
 }
 

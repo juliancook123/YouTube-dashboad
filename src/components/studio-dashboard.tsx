@@ -652,10 +652,16 @@ function Chart({
   values: number[];
 }) {
   const chartOffsetY = 17;
+  const chartViewBoxWidth = 946;
+  const chartViewBoxHeight = 190;
   const chartWidth = 871;
   const chartHeight = 112;
+  const rightAxisX = 918;
   const xAxisY = 157;
   const xLabelY = 179;
+  const tooltipSvgTop = 13;
+  const tooltipHeight = 88;
+  const tooltipGap = 12;
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
   const { areaPoints, linePoints } = useMemo(() => {
     const line = values
@@ -687,10 +693,13 @@ function Chart({
       : hoverIndex !== null && hoverIndex < 4
         ? "align-right"
         : "";
+  const tooltipTop = hoverPoint
+    ? tooltipSvgTop + hoverPoint.y - tooltipHeight - tooltipGap
+    : 0;
 
   function handlePointerMove(event: PointerEvent<SVGSVGElement>) {
     const bounds = event.currentTarget.getBoundingClientRect();
-    const svgX = ((event.clientX - bounds.left) / bounds.width) * 946;
+    const svgX = ((event.clientX - bounds.left) / bounds.width) * chartViewBoxWidth;
     const clampedX = Math.min(895, Math.max(24, svgX));
     const nextIndex = Math.round(((clampedX - 24) / chartWidth) * Math.max(values.length - 1, 1));
 
@@ -706,7 +715,7 @@ function Chart({
         onPointerLeave={() => setHoverIndex(null)}
         onPointerMove={handlePointerMove}
         preserveAspectRatio="none"
-        viewBox="0 0 946 190"
+        viewBox={`0 0 ${chartViewBoxWidth} ${chartViewBoxHeight}`}
       >
         {[0, 1, 2, 3].map((line) => (
           <line
@@ -776,16 +785,16 @@ function Chart({
         <text className="axis-label" x="909" y={xLabelY}>
           Jun ...
         </text>
-        <text className="axis-label right-axis" x="888" y="20">
+        <text className="axis-label right-axis" x={rightAxisX} y="20">
           {axisLabels[0]}
         </text>
-        <text className="axis-label right-axis" x="888" y="57">
+        <text className="axis-label right-axis" x={rightAxisX} y="57">
           {axisLabels[1]}
         </text>
-        <text className="axis-label right-axis" x="888" y="94">
+        <text className="axis-label right-axis" x={rightAxisX} y="94">
           {axisLabels[2]}
         </text>
-        <text className="axis-label right-axis" x="888" y="131">
+        <text className="axis-label right-axis" x={rightAxisX} y="131">
           {axisLabels[3]}
         </text>
         <text className="publish-marker" x="552" y="149">
@@ -803,7 +812,10 @@ function Chart({
       {hoverPoint ? (
         <div
           className={`chart-hover-tooltip ${tooltipAlignment}`}
-          style={{ left: `${(hoverPoint.x / 946) * 100}%` }}
+          style={{
+            left: `${(hoverPoint.x / chartViewBoxWidth) * 100}%`,
+            top: `${tooltipTop}px`,
+          }}
         >
           <span>{hoverPoint.date}</span>
           <strong>{formatChartHoverValue(kind, hoverPoint.value)}</strong>
